@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                margin: 100px;
+                background-color: lightslategrey;
+
+            }
+            h1{
+                color:rgb(33, 40, 48);
+            }
+            form {
+                width: 60%;
+                background-color:rgb(85, 105, 126);
+                padding: 50px;
+                
+            }
+            label {
+                color:rgb(25, 27, 29);
+                margin-bottom: 20px;
+            }
+            input[type=text] {
+                width: 100%;
+                height: 30px;
+                font-size: 20px;
+            }
+            textarea {
+                width:100%;
+                height:150px;
+                font-size: 20px;
+            }
+            input[type=checkbox] {
+                height: 20px;
+                width: 20px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: rgb(112, 78, 112);
+            }
+        </style>
+        <script>
+            function wyswietl() {
+                alert("Dziękujemy za złożenie zamówienia!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Formularz zamówienia</h1>
+        <p>Zapraszamy do złożenia zamówienia z naszej strony.</p>
+        <form>
+            <label for="imie">Imię:</label><br>
+        
+            <input type="text" id="imie"> <br><br>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko"> <br><br>
+            <label for="adres">Adres:</label><br>
+            <input type="text" id="adres"><br><br>
+            <label for="wiadomosc">Wiadomość</label><br>
+            <textarea></textarea><br><br>
+           
+            <input id="regulamin" type="checkbox">
+            <label>Zapoznałem się z warunkami regulaminu</label>
+            <br><br>
+
+            <button onclick="wyswietl()">Prześlij zamówienie</button>
+        </form>
+        
+        <a href="tcb3.html">Strona 1</a>
+
+    </body>
+</html>
