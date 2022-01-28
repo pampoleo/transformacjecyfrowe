@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                margin-left: 100px;
+                margin-top: 40px;
+                background-color: rgb(143, 173, 151);
+
+            }
+            h1{
+                color:rgb(33, 54, 40);
+            }
+            form {
+                width: 60%;
+                background-color:rgb(61, 80, 67);
+                padding: 50px;
+                
+            }
+            label {
+                color:rgb(17, 19, 20);
+                margin-bottom: 20px;
+            }
+            input[type=text] {
+                width: 100%;
+                height: 30px;
+                font-size: 20px;
+            }
+            textarea {
+                width:100%;
+                height:100px;
+                font-size: 20px;
+            }
+            input[type=checkbox] {
+                height: 20px;
+                width: 20px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: rgb(71, 97, 80);
+            }
+        </style>
+        <script>
+            function wyswietl() {
+                alert("Dziękujemy za skorzystanie z naszej oferty!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Formularz zgłoszenia</h1>
+        <p>Zapraszamy do zapisów na naszej stronie.</p>
+        <form>
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie"> <br><br>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko"> <br><br>
+            <label for="adres">Adres e-mail:</label><br>
+            <input type="text" id="adres"><br><br>
+            <label for="wiadomosc">Wiadomość</label><br>
+            <textarea></textarea><br><br>
+           
+            <input id="regulamin" type="checkbox">
+            <label>Zapoznałem się z warunkami regulaminu</label>
+            <br><br>
+
+            <button onclick="wyswietl()">Prześlij zgłoszenie</button>
+        </form>
+        
+        <a href="strona1.html">Wróć do strony początkowej</a>
+
+    </body>
+</html>
